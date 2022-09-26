@@ -14,6 +14,7 @@ dependencies:
   - msprime>=1.0
   - sympy
   - raxml-ng
+  - ghostscript
   # - raxml
   # - toytree>=3.0
   - pip
