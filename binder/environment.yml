@@ -1,13 +1,23 @@
-name: workshop
+name: phylogenetic-datascience
 channels:
   - conda-forge
   - bioconda
-  - eaton-lab
 dependencies:
-  - ipyrad
-  - toytree
-  - ipcoal
-  - raxml
-  - scikit-learn
-  - astral3
-  - tetrad
+  - python>=3.7  # the current default on mybinder
+  - jupyter
+  - numpy
+  - pandas
+  - scipy
+  - numba
+  - loguru
+  - requests
+  - msprime>=1.0
+  - sympy
+  - raxml-ng
+  # - raxml
+  # - toytree>=3.0
+  - pip
+  - pip:
+    - git+https://github.com/eaton-lab/toytree.git@toy3#egg=toytree
+    - git+https://github.com/eaton-lab/ipcoal.git@toy3#egg=ipcoal
+
